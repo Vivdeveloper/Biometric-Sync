@@ -1,0 +1,74 @@
+{
+ "actions": [],
+ "autoname": "Machine ##",
+ "creation": "2025-07-07 10:31:27.459830",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "url",
+  "url_main",
+  "key",
+  "response",
+  "enabled",
+  "map_fields"
+ ],
+ "fields": [
+  {
+   "fieldname": "url",
+   "fieldtype": "Data",
+   "label": "URL"
+  },
+  {
+   "fieldname": "key",
+   "fieldtype": "Data",
+   "label": "Key"
+  },
+  {
+   "fieldname": "response",
+   "fieldtype": "JSON",
+   "label": "Response"
+  },
+  {
+   "fieldname": "map_fields",
+   "fieldtype": "Table",
+   "label": "Map Fields",
+   "options": "Field Map"
+  },
+  {
+   "default": "0",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "label": "Enabled"
+  },
+  {
+   "fieldname": "url_main",
+   "fieldtype": "Small Text",
+   "label": "URL Main"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-07-10 12:16:18.831550",
+ "modified_by": "Administrator",
+ "module": "Exacuer Sync Biometrics",
+ "name": "Sync Biometric Settings",
+ "naming_rule": "Set by user",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

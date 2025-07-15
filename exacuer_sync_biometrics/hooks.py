@@ -242,3 +242,17 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+doc_events = {
+    "Sync Biometric Settings": {
+        "before_save": "exacuer_sync_biometrics.exacuer_sync_biometrics.doctype.sync_biometric_settings.sync_biometric_settings.before_save_sync_biometric_settings"
+    }
+}
+
+
+scheduler_events = {
+    "cron": {
+        "0/5 * * * *": [
+            "exacuer_sync_biometrics.exacuer_sync_biometrics.doctype.sync_biometric_settings.sync_biometric_settings.sync_biometric_checkins"
+        ]
+    }
+}
